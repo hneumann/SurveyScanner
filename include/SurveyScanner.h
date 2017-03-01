@@ -13,6 +13,7 @@ private:
 	Mat reference;
 
 	int processFrame(string);
+	int processFrameWithReference(string);
 
 public:
 	SurveyScanner(string);
