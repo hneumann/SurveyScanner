@@ -1,5 +1,14 @@
 %YAML:1.0
 
+Mode: semi 
+# automatic: user will not be asked for correctnes.
+# semi: user has to verify every sheet.
+
+SkalaStartPx: 337.0
+SkalaEndPx: 520.0
+
+NumberOfItems: 3
+
 ReferenceImage: "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\reference.png"
 
 Surveys: 
