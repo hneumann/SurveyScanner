@@ -1,0 +1,27 @@
+# ### Tabletop INSTANTIO connection ###
+# ===============================
+# 
+# Sets required variables for finding bart library:
+#
+# TABLETOP_IIO_FOUND
+# TABLETOP_IIO_INCLUDE_DIRS
+# TABLETOP_IIO_LIBRARY_DIRS
+# TABLETOP_IIO_LIBRARIES
+# TABLETOP_IIO_VERSION
+# 
+# Example:
+# find_package(tabletop_iio 0.1)
+#
+# ###############################################################################
+
+INCLUDE(FindPkgConfig)
+
+GET_FILENAME_COMPONENT(CONFIG_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+
+SET(TABLETOP_IIO_FOUND TRUE)
+SET(TABLETOP_IIO_INCLUDE_DIRS "${CONFIG_DIR}/../../include/@TABLETOP_IIO_PACKAGE@")
+SET(TABLETOP_IIO_LIBRARY_DIRS "${CONFIG_DIR}/../../lib")
+SET(TABLETOP_IIO_VERSION "@TABLETOP_IIO_VERSION@")
+SET(TABLETOP_IIO_LIBRARIES "${CONFIG_DIR}/../../lib/@CMAKE_SHARED_LIBRARY_PREFIX@@TABLETOP_IIO_LIBNAME@@CMAKE_SHARED_LIBRARY_SUFFIX@")
+
+# TODO: find dependencies here and append their include dirs to TABLETOP_IIO_INCLUDE_DIRS

@@ -1,0 +1,7 @@
+%YAML:1.0
+
+ReferenceImage: "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\reference.png"
+
+Surveys: 
+    - "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\1.png"
+    - "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\2.png"
