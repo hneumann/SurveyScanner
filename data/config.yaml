@@ -1,22 +1,29 @@
 %YAML:1.0
 
 Mode: semi 
-# automatic: user will not be asked for correctnes.
+# automatic: user will not be asked for correctness.
 # semi: user has to verify every sheet.
 
-SkalaStartPx: 337.0
-SkalaEndPx: 520.0
+PrepocessMode: ReferenceImage
+# ReferenceImage: try to detect answers using difference image to a reference image.
+# xDetection: try to detect the writen x.
+
+SkalaStartPx: 674
+SkalaEndPx: 1046
+
+ResizeWidth: 1188
+ResizeHeight: 1678
 
 NumberOfItems: 3
 
 ReferenceImage: "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\reference.png"
 
 Surveys: 
-    - "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\2.png"
-    - "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\3.png"
-    - "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\4.png"
-    - "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\5.png"
-    - "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\6.png"
-    - "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\7.png"
+    - "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\2.png" 
+    - "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\3.png" 
+    - "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\4.png" 
+    - "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\5.png" 
+    - "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\6.png" 
+    - "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\7.png" 
     - "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\8.png"
     

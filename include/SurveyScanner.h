@@ -10,16 +10,23 @@ class SurveyScanner
 {
 private:
 	vector<string> surveys;
-	Mat reference;
-	Mat raw;
-	Mat original;
-
-	int processFrame(string);
-	int processFrameWithReference(string);
 	vector<Point> checkedPositions;
 
-	double skalaStart; 
-	double skalaEnd;
+	string preprocessMode;
+
+	Mat reference;
+	Mat raw;
+	Mat frame;
+	Mat original;
+
+	int preProcessFrame(string);
+	int preProcessFrameWithReference(string);
+	int process();
+
+	Size rSize;
+
+	int skalaStart;
+	int skalaEnd;
 
 	int numChecks;
 	int mode; //0: semi, 1: automatic

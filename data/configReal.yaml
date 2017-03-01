@@ -1,0 +1,23 @@
+%YAML:1.0
+
+Mode: semi 
+# automatic: user will not be asked for correctness.
+# semi: user has to verify every sheet.
+
+PrepocessMode: ReferenceImage
+# ReferenceImage: try to detect answers using difference image to a reference image.
+# xDetection: try to detect the writen x.
+
+SkalaStartPx: 664
+SkalaEndPx: 1012
+
+ResizeWidth: 1188
+ResizeHeight: 1678
+
+NumberOfItems: 3
+
+ReferenceImage: "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\referenceReal.jpg"
+
+Surveys: 
+    - "C:\\Users\\Henri\\Uni\\Arbeit\\hneumann3\\software\\SurveyScanner\\data\\testReal.jpg"
+    
