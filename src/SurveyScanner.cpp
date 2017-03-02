@@ -131,7 +131,7 @@ int SurveyScanner::preProcessFrame(string path){
 	erode(frame, frame, horStructure, Point(-1, -1));
 	dilate(frame, frame, horStructure, Point(-1, -1));
 	imshow("binary", frame);
-	waitKey();
+	//waitKey();
 
 	return -1;
 }
@@ -195,21 +195,21 @@ int SurveyScanner::preProcessFrameWithReference(string path){
 	adaptiveThreshold(~frame, frame, 255, CV_ADAPTIVE_THRESH_MEAN_C, THRESH_BINARY, 15, -2);
 	//frame = frame < 250;
 	//namedWindow("ref", CV_WINDOW_KEEPRATIO | CV_GUI_EXPANDED | CV_WINDOW_NORMAL);
-	//namedWindow("binary", CV_WINDOW_KEEPRATIO | CV_GUI_EXPANDED | CV_WINDOW_NORMAL);
+	namedWindow("binary", CV_WINDOW_KEEPRATIO | CV_GUI_EXPANDED | CV_WINDOW_NORMAL);
 	
 
 	//dilate(reference, reference, Mat::ones(Size(rSize.width / 500, rSize.width / 300), CV_8U), Point(-1, -1));
 	//imshow("binary", frame);
 	//imshow("ref", reference);
-	waitKey();
+	//waitKey();
 	frame = frame - reference;
 
 	erode(frame, frame, Mat::ones(Size(rSize.width / 500, rSize.width / 500), CV_8U), Point(-1, -1));
-	//dilate(frame, frame, Mat::ones(Size(rSize.width / 10, rSize.width / 10), CV_8U), Point(-1, -1));
-	//erode(frame, frame, Mat::ones(Size(rSize.width / 10, rSize.width / 10), CV_8U), Point(-1, -1));
+	dilate(frame, frame, Mat::ones(Size(rSize.width / 10, rSize.width / 10), CV_8U), Point(-1, -1));
+	erode(frame, frame, Mat::ones(Size(rSize.width / 10, rSize.width / 10), CV_8U), Point(-1, -1));
 
 	imshow("binary", frame);
-	waitKey();
+	//waitKey();
 	
 
 
